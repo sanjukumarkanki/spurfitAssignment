@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar'
+import MasterLife from "./components/MasterLife";
+import EQbeatsIQ from "./components/EQbeatsIQ";
+import DoesThisSoundFamiliar from "./components/DoesThisSoundFamiliar";
+import MeetAheadCard from "./components/MeetAheadCard";
+import SelfImprovement from "./components/SelfImprovement";
+import BeBestYou from "./components/BeBestYou";
+import EverWonder from "./components/EverWonder";
+import Test from "./components/Test";
+import WorkWithUs from "./components/WorkWithUs";
+import Openvacancies from "./components/Openvacancies";
+import Footer from "./components/Footer";
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen w-screen">
+          <Navbar />
+          <MasterLife/>
+          <EQbeatsIQ />
+          <DoesThisSoundFamiliar />
+          <MeetAheadCard />
+          <SelfImprovement />
+          <BeBestYou />
+          <EverWonder />
+          <Test />
+          <WorkWithUs />
+          <Openvacancies />
+          <Footer />
     </div>
-  );
+  )
 }
-
-export default App;
